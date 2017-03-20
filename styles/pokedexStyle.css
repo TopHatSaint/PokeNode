@@ -1,0 +1,217 @@
+@font-face {
+font-family: "PocketMonk";
+src: url("../Fonts/PocketMonk.otf");
+}
+
+@font-face {
+font-family: "PokeballIcon";
+src: url("../Fonts/PokeBall.png")
+}
+
+@font-face {
+font-family: "PokemonGameFont";
+src: url("../Fonts/pokemon_pixel_font.woff");
+}
+.gameText{
+font-family: PokemonGameFont;
+font-size: 25px
+}
+.header {
+width: 100%;
+height: 7.4vh;
+background-color: red;
+z-index: 1;
+position: fixed;
+}
+.miniGameBox{
+  padding-top:18.5%;
+  background-color:#4254B2;
+}
+.mysteryPokemon{
+
+height: 70vh;
+width: 100%;
+}
+.whosSearch{
+
+}
+.aboutInfo{
+background-image: url(http://collectwall.com/wp-content/uploads/2016/09/Pikachu-Enjoy-Sleep-Wallpaper.jpg);
+background-size: cover;
+height: 100vh;
+padding-top: 15%;
+}
+.PokeCon {
+height: 50px;
+width: 50px;
+}
+.WhosThat{
+float: right;
+padding-top: .9%;
+font-family: PokemonGameFont;
+font-size: 45px;
+}
+.about {
+position: absolute;
+left: 4%;
+top: 15%;
+z-index: 9999;
+font-family: PokemonGameFont;
+font-size: 45px;
+}
+.aboutInfo{
+text-align: center;
+font-family: PokemonGameFont;
+font-size: 65px;
+}
+
+.pokeTitle {
+position: absolute;
+z-index: 1;
+top: 1%;
+right: 45%;
+padding-top: 1%;
+/*padding-left: 12.5%;*/
+text-align: center;
+display: inline-block;
+}
+
+.pokeFont {
+font-family: 'PocketMonk';
+font-size: 45px;
+color: yellow;
+text-shadow: -3.5px 0 #4254B2, 0 3.5px #4254B2, 3.5px 0 #4254B2, 0 -3.5px #4254B2;
+}
+
+.searchBar {
+float: right;
+height: 3.5vh;
+margin-right: 1%;
+margin-top: 1.3%;
+}
+
+.searchButton {
+float: right;
+border: 0;
+background: none;
+margin-top: .5%
+}
+.rotateAni {
+height: 55px;
+width: 55px;
+
+
+/* The animation part: */
+animation-name: spin;
+animation-duration: 600ms;
+/*animation-iteration-count:infinite;*/
+animation-timing-function: linear;
+}
+@keyframes spin {
+from {transform:rotate(0deg);}
+to {transform:rotate(360deg);}
+}
+
+.searchSync {}
+
+.pokedexScreen {
+width: 100%;
+height: 93vh;
+z-index: 0;
+background-color: black;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: space-around;
+align-items: stretch;
+align-content: stretch;
+}
+
+.pokeDisplay {
+background-color: white;
+width: 95%;
+height: 85vh;
+margin-top: 2%;
+}
+
+.pokeProfilePic {
+height: 42.5vh;
+width: 50%;
+float: left;
+border-style: dashed;
+border-color: black;
+border-width: medium;
+}
+
+.pokeDescription {
+background-color: red;
+width: 50%;
+height: 42.5vh;
+float: right;
+border-style: dashed;
+border-color: black;
+border-width: medium;
+}
+
+.otherPokeInfo {
+width: 100%;
+height: 42.5vh;
+clear: both;
+background-color: #4254B2;
+border-style: dashed;
+border-color: black;
+border-width: medium;
+}
+
+.Profile {
+width: 85%;
+height: 38vh;
+padding-left: 15%;
+z-index: 15;
+border: none;
+}
+
+.pokeName {
+text-align: center;
+font-family: PokemonGameFont;
+font-size: 45px;
+}
+
+.pokeDefault {
+font-family: PokemonGameFont;
+font-size: 55px;
+padding-left: 25px;
+}
+
+.pokeWeight {
+font-family: PokemonGameFont;
+font-size: 25px;
+}
+
+.pokeHeight {
+font-family: PokemonGameFont;
+font-size: 25px;
+}
+
+.pokeType {
+font-family: PokemonGameFont;
+}
+
+.pokeFlavorText {
+padding-top: 5%;
+font-family: PokemonGameFont;
+font-size: 55px
+}
+
+.pokedexNumber {
+float: right;
+font-family: PokemonGameFont;
+font-size: 45px;
+padding-right: 5px;
+}
+@media (max-width: 955px)  {
+  .Profile{
+    padding-left: 15%;
+    height: 30vh;
+  }
+}

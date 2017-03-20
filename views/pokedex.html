@@ -1,0 +1,40 @@
+<section class="header">
+    <div class="searchSync">
+        <form>
+            <button type="submit" class="searchButton " ng-click='getPokes(); getMorePokes(); toggle()'>
+            <img class="PokeCon" spin-icon src ="../Fonts/PokeBall.png"></button>
+            <input type="text" class="searchBar gameText" ng-model="pokeName " placeholder="Search your Pokedex!">
+        </form>
+    </div>
+    <div class="pokeTitle pokeFont">
+        PokeDev
+    </div>
+    <div ui-sref="About" class="about">
+        About
+    </div>
+
+    <section class="pokedexScreen">
+
+        <div class="pokeDisplay">
+            <div class="pokeProfilePic">
+                <p class='pokedexNumber'>#{{pokeData.id }}</p>
+                <img class="Profile" ng-show = "pokeToggle" ng-src='{{pokeData.sprites.front_default}}'>
+                <p class='pokeName'>{{pokeData.name.toUpperCase()}}</p>
+            </div>
+
+            <div class="pokeDescription">
+                <p class='pokeDefault'> Meters: {{pokeData.height}}</p>
+                <h6 class='pokeDefault'> Weight: {{pokeData.weight}}</h6>
+                <p class='pokeDefault'> Egg Group: {{pokeData2.egg_groups[0].name.toUpperCase()}}
+                    <p class='pokeDefault'> Species Color: {{pokeData2.color.name.toUpperCase()}}</p>
+
+            </div>
+            <div class="otherPokeInfo">
+                <p class='pokedexNumber'>#{{pokeData.id}}</p>
+                <h3 class='pokeFlavorText'>{{pokeData2.flavor_text}}</h3>
+
+
+            </div>
+    </section>
+     </div>
+</section>
